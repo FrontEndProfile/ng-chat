@@ -1,0 +1,37 @@
+<!-- Swiper for slides1, only rendered if showSlide1 is true -->
+<div *ngIf="showSlide1">
+    <swiper-container class="mySwiper" navigation="true" slides-per-view="4" space-between="20">
+      <swiper-slide *ngFor="let slide of slides1">
+        <img [src]="slide" alt="Slide">
+      </swiper-slide>
+    </swiper-container>
+  </div>
+  
+  <!-- Swiper for slides2, only rendered if showSlide2 is true -->
+  <div *ngIf="showSlide2">
+    <swiper-container class="mySwiper" navigation="true" slides-per-view="4" space-between="20">
+      <swiper-slide *ngFor="let slide of slides2">
+        <img [src]="slide" alt="Slide">
+      </swiper-slide>
+    </swiper-container>
+  </div>
+  
+  <!-- Swiper for slides3, only rendered if showSlide3 is true -->
+  <div *ngIf="showSlide3">
+    <swiper-container class="mySwiper" navigation="true" slides-per-view="4" space-between="20">
+      <swiper-slide *ngFor="let slide of slides3">
+        <img [src]="slide" alt="Slide">
+      </swiper-slide>
+    </swiper-container>
+  </div>
+  
+
+    <!-- Swiper for slides4, only rendered if showSlide3 is true -->
+    <div *ngIf="showSlide4">
+        <swiper-container class="mySwiper" navigation="true" slides-per-view="4" space-between="20">
+          <swiper-slide *ngFor="let slide of slides4">
+            <img [src]="slide" alt="Slide">
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      

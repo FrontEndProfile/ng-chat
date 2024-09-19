@@ -1,0 +1,15 @@
+
+
+<div class="container py-5">
+    <div *ngFor="let slides of slidesCollection;">
+        <div class="message-user">form user - qwerty</div>
+        <div class="message-client">form client - qwerty</div>
+        <swiper-container class="swiper" navigation="true" slides-per-view="3" space-between="20">
+          <swiper-slide *ngFor="let slide of slides">
+            <img [src]="slide" alt="Slide">
+          </swiper-slide>
+        </swiper-container>
+      </div>
+
+</div>
+

@@ -1,0 +1,34 @@
+
+
+
+<div class="container py-5">
+    <div *ngIf="cards">
+        <swiper-container class="mySwiper" navigation="true" slides-per-view="3" space-between="20" #demo1>
+          <swiper-slide *ngFor="let card of cards">
+            <img style="width: 100%;" [src]="card.avatar" alt="Slide">
+          </swiper-slide>
+        </swiper-container>
+    
+        <!-- DYNAMIC BUTTON  -->
+         <br>
+         <br>
+         <br>
+        <small> agr hum khod add krty ha , tb bs next or back ka feature chlta because out of swiper-container ha </small>
+        <br>
+
+        <button (click)="demo1.swiper.slidePrev()" class="swiper_btn"> Back </button>
+        <button (click)="demo1.swiper.slideNext()" class="swiper_btn prev"> Next </button>
+    
+    </div>
+    
+    <div *ngIf="!cards">Loading...</div>
+</div>
+
+
+
+
+
+
+
+
+
